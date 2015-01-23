@@ -20,7 +20,7 @@
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/passwd.js"></script>
 	<script type="text/javascript">
-  var length=8;
+  var length=12;
   var count=10;
 </script>
 </head>
@@ -157,7 +157,7 @@ function Check() {
     <br>
 
         <label>Длина пароля:
-    <input name="length" size="5" value="10" type="text"></label><br>
+    <input name="length" size="5" value="12" type="text"></label><br>
     <label>
          Количество паролей:
          <input name="count" size="5" value="10" type="text"></label><br><br>
@@ -176,7 +176,7 @@ for (i=1;i<=c;i++)
               <p id="YOURS">Здесь появится список паролей, когда вы нажмете "Создать пароль!". Например:<br>
               <script type="text/javascript">
                  for (j=1;j<=10;j++)
-                      document.write(j+".&nbsp;<samp>"+PasGenHTML("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890",10)+"</samp><br>");
+                      document.write(j+".&nbsp;<samp>"+PasGenHTML("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890",12)+"</samp><br>");
               </script><br>
             </p>
             </div>
@@ -206,7 +206,7 @@ for (i=1;i<=c;i++)
                    for (j=0;j<10;j++)
                    {
                        a=Math.floor(Math.random()*4)+1;
-                       document.write("<li><samp>"+PasGenHTML("abcdefghijklmnopqrstuvwxyz",8-a)+PasGenHTML("1234567890",a)+"</samp>");
+                       document.write("<li><samp>"+PasGenHTML("abcdefghijklmnopqrstuvwxyz",length-a)+PasGenHTML("1234567890",a)+"</samp>");
                    }
                    document.write("</ol>");
             </script>
