@@ -37,20 +37,18 @@
                 </div>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#about">О нас</a>
+            <a class="nav-link" href="#">О нас</a>
             </li>
         </ul>
     </div>
 </nav>
-<br />
+
 <!-- Main table-->  
-<table align="center" width="90%">
+<table style="margin-left: auto; margin-right: auto; width: 90%">
 <tbody><tr>
-   <td align="center" valign="top">
+   <td style="padding: 0 10px 0 10px; vertical-align: top">
         <div class="card">
-            <div class="card-header bg-primary text-white">
-              <h3 class="card-title">Как слово</h3>
-            </div>
+            <div class="card-header bg-success text-white">Как слово</div>
             <div class="card-body">
               <script type="text/javascript">
              document.write("<ol>");
@@ -59,7 +57,7 @@
 		          s="";
                   for (k=0;k<length-1;k++)
                     if (k%2==0)
-                      s=s+PasGenHTML("bcdfghjklmnpqrstvwxz",1)
+                      s=s+PasGenHTML("bcdfghjklmnpqrstvwxz",1);
                     else
                       s=s+PasGenHTML("aeiouy",1);
                   s=s+PasGenHTML("!@#$%^&*()<>[]{}_+-=,./?",1);
@@ -69,10 +67,10 @@
             </script>
             </div>
           </div>
-       <br />
+       
 <div class="card">
-            <div class="card-header bg-primary text-white">
-              <h3 class="card-title">СУПЕРпароль</h3>
+            <div class="card-header bg-success text-white">
+              СУПЕРпароль
             </div>
             <div class="card-body">
               <script type="text/javascript"><!--
@@ -82,51 +80,40 @@
             </div>
           </div>
    </td>
-   <td style="padding-left: 10px;  padding-right: 10px;" align="center" valign="top" width="50%">
+   <td style="width: 50%; padding: 0 10px 0 10px; vertical-align: top;">
 	<div class="card ">
-            <div class="card-header bg-primary text-white">
-              <h3 class="card-title">О проекте</h3>
+            <div class="card-header bg-success text-white">
+              О проекте
             </div>
             <div class="card-body">
-              <p align="left">Проект "генератор паролей" создан, чтобы помочь вам с придумыванием устойчивых к взлому и легкозапоминающихся  паролей.</p>
-			  <p align="left">Часто бывает: зарегистрировался где-нибудь, а там просят: "введите пароль". В спешке приходится вводить что-нибудь типа qwerty или 12345. Последствия могут быть фатальными для вашего аккаунта: при попытке взлома такие пароли проверяются в первую очередь. Чтобы этого не происходило, надо создавать сложный пароль, желательно состоящий из букв разного регистра и содержащий цифры и другие символы.</p>
-			  <p align="left">Для создания таких паролей существуют специальные программы. Но, на наш взгляд, гораздо легче набрать наш адрес и просто выбрать понравившийся пароль.</p>
+              <p>Проект "генератор паролей" создан, чтобы помочь вам с придумыванием устойчивых к взлому и легкозапоминающихся  паролей.</p>
+			  <p>Часто бывает: зарегистрировался где-нибудь, а там просят: "введите пароль". В спешке приходится вводить что-нибудь типа qwerty или 12345. Последствия могут быть фатальными для вашего аккаунта: при попытке взлома такие пароли проверяются в первую очередь. Чтобы этого не происходило, надо создавать сложный пароль, желательно состоящий из букв разного регистра и содержащий цифры и другие символы.</p>
+			  <p>Для создания таких паролей существуют специальные программы. Но, на наш взгляд, гораздо легче набрать наш адрес и просто выбрать понравившийся пароль.</p>
             </div>
           </div>
-       <br />
+       
         <div class="card ">
-            <div class="card-header bg-primary text-white">
-              <h3 class="card-title">Советы</h3>
+            <div class="card-header bg-success text-white">
+              Советы
             </div>
-            <div class="card-body">
-              <p align="left"><img src="images/warning.png" width="16px" height="16px" alt="!">&nbsp;Выбирайте
- пароль посложнее, состоящий из символов разного регистра, с цифрами и
-[для абсолютной надёжности] знаками препинания.
-            </p><p align="left"><img src="images/warning.png" width="16px" height="16px" alt="!">&nbsp;Не используйте пароль, связанный с теми данными, которые могут быть о вас известны, например, ваше имя или дату рождения.
-            </p><p align="left"><img src="images/warning.png" width="16px" height="16px" alt="!">&nbsp;Пароли, которые вы видите на экране создаются <b>в реальном времени на вашем компьютере</b>,
- поэтому исключена возможность перехвата пароля по сети. Разные
-посетители сайта видит разные пароли. Если вы зайдете на сайт второй
-раз, пароли будут <b>другими</b>. <!--Пароли не кешируются: при повторном просмотре страницы (из интернета, сохраненную вручную или в кеше) пароли будут создаваться заново.-->
-            </p><p align="left"><img src="images/warning.png" width="16px" height="16px" alt="!">&nbsp;Вы можете выбрать пункт меню браузера "Файл|Сохранить как...", чтобы пользоваться генератором паролей в оффлайне.
-            </p><p align="left"><img src="images/warning.png" width="16px" height="16px" alt="!">&nbsp;Генератор
- паролей полностью прозрачен: скачайте файл passwd.js, чтобы увидеть,
-как создается пароль, и убедиться в абсолютной надежности.
+            <div style="text-align: left" class="card-body">
+              <p><img style="width: 16px" src="images/warning.png" alt="!"> Выбирайте пароль посложнее, состоящий из символов разного регистра, с цифрами и [для абсолютной надёжности] знаками препинания.</p>
+                <p><img style="width: 16px" src="images/warning.png" alt="!">&nbsp;Не используйте пароль, связанный с теми данными, которые могут быть о вас известны, например, ваше имя или дату рождения.</p>
+                <p><img style="width: 16px" src="images/warning.png" alt="!">&nbsp;Пароли, которые вы видите на экране создаются <b>в реальном времени на вашем компьютере</b>, поэтому исключена возможность перехвата пароля по сети. Разные посетители сайта видит разные пароли. Если вы зайдете на сайт второй раз, пароли будут <b>другими</b>. <!--Пароли не кешируются: при повторном просмотре страницы (из интернета, сохраненную вручную или в кеше) пароли будут создаваться заново.--></p>
+                <p><img style="width: 16px" src="images/warning.png" alt="!">&nbsp;Вы можете выбрать пункт меню браузера "Файл|Сохранить как...", чтобы пользоваться генератором паролей в оффлайне.</p>
+                <p><img style="width: 16px" src="images/warning.png" alt="!">&nbsp;Генератор паролей полностью прозрачен: скачайте файл passwd.js, чтобы увидеть, как создается пароль, и убедиться в абсолютной надежности.</p>
             </div>
           </div>
-   <br></td>
-   <td style="padding-left: 10px; padding-right: 10px;" align="center" valign="top" width="50%">
+   </td>
+   <td style="width: 50%;  padding: 0 10px 0 10px; text-align: left ; vertical-align: top;">
 	<div class="card ">
-            <div class="card-header bg-primary text-white">
-              <h3 class="card-title">Создание своего пароля</h3>
-            </div>
+            <div class="card-header bg-success text-white">Создание своего пароля</div>
             <div class="card-body">
-         <div align="left"><form name="f" method="POST" action="">
-       <p>
-        Здесь вы можете сами создать пароль любой длины и любой сложности.
-       </p><p>
-        Символы:<br>
-    <input class="form-control" name="chars" value="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz" style="width:150px;" type="text"><br>
-    Варианты:
+         <div class="form-group">
+             <form style="text-align: left" name="f" method="POST" action="">
+       <p>Здесь вы можете сами создать пароль любой длины и любой сложности.</p>
+                 <p>Символы:<br>
+                     <label><input class="form-control" name="chars" value="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz" style="width:300px;" type="text"><br>Варианты:</label>
 <script>
 function Check() {
   f.chars.value='';
@@ -136,30 +123,25 @@ function Check() {
   if (f.Csmall.checked) f.chars.value=f.chars.value+'abcdefghijklmnopqrstuvwxyz';
  }
 </script>
-    <br><input name="Csmall" onClick="Check();" checked="checked" type="checkbox">Маленькие буквы
-    <br><input name="Cbig" onClick="Check();" checked="checked" type="checkbox">Заглавные буквы
-    <br><input name="Cnum" onClick="Check();" checked="checked" type="checkbox">Цифры
-    <br><input name="Csigns" onClick="Check();" type="checkbox">Знаки
+    <br><label><input name="Csmall" onClick="Check();" checked="checked" type="checkbox"> Маленькие буквы</label>
+    <br><label><input name="Cbig" onClick="Check();" checked="checked" type="checkbox"> Заглавные буквы</label>
+    <br><label><input name="Cnum" onClick="Check();" checked="checked" type="checkbox"> Цифры</label>
+    <br><label><input name="Csigns" onClick="Check();" type="checkbox"> Знаки</label>
     <br>
 
-        <label>Длина пароля:
-    <input class="form-control" name="length" size="5" value="12" type="text"></label><br>
-    <label>
-         Количество паролей:
-         <input class="form-control" name="count" size="5" value="10" type="text"></label><br><br>
+        <label>Длина пароля:<input class="form-control num-field" name="length" size="5" value="12" type="text"></label><br>
+                     <label>Количество паролей:<input class="form-control num-field" name="count" size="5" value="10" type="text"></label>
     <br>
-    <input class="btn btn-sm btn-primary" value="Создать пароль!" onClick="document.all.YOURS.innerHTML='Вот список ваших паролей:<br>';
+    <input class="btn btn-sm btn-success" value="Создать пароль!" onClick="document.all.YOURS.innerHTML='Вот список ваших паролей:<br>';
 c = f.count.value;
 for (i=1;i<=c;i++)
     document.all.YOURS.innerHTML+=i+'. <samp>'+PasGenHTML(f.chars.value,f.length.value)+'</samp><br>';" type="button">
     </p></form></div>
             </div>
           </div>
-       <br />
+       
        <div class="card ">
-            <div class="card-header bg-primary text-white">
-              <h3 class="card-title">Резульат</h3>
-            </div>
+            <div class="card-header bg-success text-white">Результат</div>
             <div class="card-body">
               <p id="YOURS">Здесь появится список паролей, когда вы нажмете "Создать пароль!". Например:<br>
               <script type="text/javascript">
@@ -169,12 +151,10 @@ for (i=1;i<=c;i++)
             </p>
             </div>
           </div>
-   <br></td>
-   <td align="center" valign="top">
+   </td>
+   <td style="padding: 0 10px 0 10px; text-align: center; vertical-align: top">
 <div class="card ">
-            <div class="card-header bg-primary text-white">
-              <h3 class="card-title">Цифры, регистр</h3>
-            </div>
+            <div class="card-header bg-success text-white">Цифры, регистр</div>
             <div class="card-body">
               <script type="text/javascript">
             chars="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
@@ -182,11 +162,9 @@ for (i=1;i<=c;i++)
             </script>
             </div>
           </div>
-       <br />
+       
        <div class="card ">
-            <div class="card-header bg-primary text-white">
-              <h3 class="card-title">Слово и число</h3>
-            </div>
+            <div class="card-header bg-success text-white">Слово и число</div>
             <div class="card-body">
               <script type="text/javascript">
                    var a;
@@ -200,11 +178,9 @@ for (i=1;i<=c;i++)
             </script>
             </div>
           </div>
-       <br />
+       
 <div class="card ">
-            <div class="card-header bg-primary text-white">
-              <h3 class="card-title">Простой пароль</h3>
-            </div>
+            <div class="card-header bg-success text-white">Простой пароль</div>
             <div class="card-body">
               <script type="text/javascript">
             chars="abcdefghijklmnopqrstuvwxyz";
