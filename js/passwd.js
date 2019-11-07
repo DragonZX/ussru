@@ -1,16 +1,19 @@
 function PasGenCountHTML(chars,length,count)
 {
  document.write("<ol>");
- for (j=0;j<count;j++)
+ for (let j=0; j<count; j++)
      document.write("<li><samp>"+PasGenHTML(chars,length)+"</samp>");
  document.write("</ol>");
 }
 
+/**
+ * @return {string}
+ */
 function PasGenHTML(chars,length)
 {
-var res="";
-var r;
-var i;
+let res="";
+let r;
+let i;
   for (i=1;i<=length;i++)
     {
      r=Math.floor(Math.random()*chars.length);

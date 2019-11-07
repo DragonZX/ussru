@@ -12,8 +12,8 @@
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/passwd.js"></script>
 	<script type="text/javascript">
-  var length=12;
-  var count=10;
+  const length=12;
+  const count=10;
 </script>
 </head>
 <body>
@@ -52,15 +52,15 @@
             <div class="card-body">
               <script type="text/javascript">
              document.write("<ol>");
-             for (j=0;j<count;j++)
+             for (let j=0;j<count;j++)
                  {
-		          s="";
-                  for (k=0;k<length-1;k++)
-                    if (k%2==0)
-                      s=s+PasGenHTML("bcdfghjklmnpqrstvwxz",1);
+		          let s="";
+                  for (let k=0;k<length-1;k++)
+                    if (k%2===0)
+                      s+=PasGenHTML("bcdfghjklmnpqrstvwxz",1);
                     else
-                      s=s+PasGenHTML("aeiouy",1);
-                  s=s+PasGenHTML("!@#$%^&*()<>[]{}_+-=,./?",1);
+                        s+=PasGenHTML("aeiouy",1);
+                    s+=PasGenHTML("!@#$%^&*()<>[]{}_+-=,./?",1);
                   document.write("<li><samp>"+s+"</samp>");
                  }
              document.write("</ol>");
@@ -133,8 +133,8 @@ function Check() {
                      <label>Количество паролей:<input class="form-control num-field" name="count" size="5" value="10" type="text"></label>
     <br>
     <input class="btn btn-sm btn-success" value="Создать пароль!" onClick="document.all.YOURS.innerHTML='Вот список ваших паролей:<br>';
-c = f.count.value;
-for (i=1;i<=c;i++)
+let c = f.count.value;
+for (let i=1;i<=c;i++)
     document.all.YOURS.innerHTML+=i+'. <samp>'+PasGenHTML(f.chars.value,f.length.value)+'</samp><br>';" type="button">
     </p></form></div>
             </div>
@@ -145,7 +145,7 @@ for (i=1;i<=c;i++)
             <div class="card-body">
               <p id="YOURS">Здесь появится список паролей, когда вы нажмете "Создать пароль!". Например:<br>
               <script type="text/javascript">
-                 for (j=1;j<=10;j++)
+                 for (let j=1;j<=10;j++)
                       document.write(j+".&nbsp;<samp>"+PasGenHTML("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890",12)+"</samp><br>");
               </script><br>
             </p>
@@ -167,9 +167,9 @@ for (i=1;i<=c;i++)
             <div class="card-header bg-success text-white">Слово и число</div>
             <div class="card-body">
               <script type="text/javascript">
-                   var a;
+                   let a;
                    document.write("<ol>");
-                   for (j=0;j<10;j++)
+                   for (let j=0;j<10;j++)
                    {
                        a=Math.floor(Math.random()*4)+1;
                        document.write("<li><samp>"+PasGenHTML("abcdefghijklmnopqrstuvwxyz",length-a)+PasGenHTML("1234567890",a)+"</samp>");
